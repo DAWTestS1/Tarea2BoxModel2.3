@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de Modelo de Caja</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <h2>Demostración modelo de caja</h2>  
+    <div class="bloque">Este es un elemento de bloque que tiene relleno, borde y margen aplicados.</div>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus odio enim distinctio facilis alias adipisci, 
+      molestias laudantium quaerat similique atque, excepturi placeat reprehenderit ut tempora sint. Beatae, quibusdam labore. Voluptatem.</p>
+    <span class="enlinea">Este es un elemento en línea que actúa como bloque.</span>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque accusantium obcaecati qui similique voluptate, officia laudantium, 
+      deserunt in possimus commodi facilis doloribus alias blanditiis ea exercitationem quos molestiae dolores sint.</p>
+    <!--Ejemplo donde se muestra  el elemento en linea -->  
+    <div class="inline-example">
+        <p>Este es un elemento <span class="inline">inline</span> integrado al texto de manera normal </p>
+    </div>  
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p>A continuación se muestra un elemento <span class="inline-block">inline-block con position fixed</span></p>
+    <br><br><br><br><br><br><br><br>
+
+    <div id="floatLeft" >
+      <img src="imagenes/3139252.jpg" alt="" width="200px" height="200px">
+    </div>
+    <div id="floatRight">
+      <img src="imagenes/images.jpeg" alt="" width="200px" height="200px">
+    </div>
+    <p id="textEnMedio">Este texto fluye alrededor de los elementos flotantes.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio dignissimos corporis eum debitis officia! 
+      Omnis voluptatem, assumenda fugit in accusamus repellendus quibusdam. Corrupti dolores asperiores illum natus ducimus in sint.</p>
+    
+    <div id="stopFloat">Este texto está después de los elementos flotantes.</div>
+
+    
+    <section class="Display">
+      <h2>Display (block, inline, inline-block, none)</h2>
+      <div id="block">Elemento de bloque</div>
+      <span id="inline">Elemento en línea</span>
+      <div id="inline-block">Elemento inline-block</div>
+      <div id="none">Este elemento está oculto (display: none)</div>
+    </section>
+
+
+    <section class="OverFlow">
+      <h2>Overflow (visible, hidden, scroll, auto)</h2>
+      <h3>Overflow visible</h3>
+      <div id="overflow-visible">Overflow visible  Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Alias porro ullam maiores impedit saepe iste eum velit veniam nulla architecto dignissimos reprehenderit quis ducimus hic iure nobis, a officiis vitae!</div>
+      <br><br><br><br><br><br>
+      <h3>OverFlow Hidden</h3>
+      <div id="overflow-hidden">Overflow hidden  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Quidem provident hic odio in fuga pariatur animi sed vitae ipsum tenetur, a, sapiente sequi rerum? Nobis, molestiae! Recusandae quisquam magnam labore?</div>
+      <div id="overflow-hidden"> Ejemplo sin desbordar</div>  
+      <h3>OverFlow Scroll</h3>
+      <div id="overflow-scroll">Overflow scroll  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Enim et amet soluta recusandae optio consequatur vero sed. Tenetur, rem! Quas odit quia aliquam vel assumenda delectus iusto exercitationem totam labore.</div>
+      <div id="overflow-scroll"> Ejemplo sin desbordar</div>
+      <h3>OverFlow auto</h3>
+      <div id="overflow-auto">Overflow auto  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa modi obcaecati nostrum exercitationem, 
+        tempora corporis praesentium ipsam facilis, voluptates id minus explicabo quae. Ea repudiandae officia at, in ut dolores.</div>
+      <div id="overflow-auto"> Ejemplo sin desbordar</div>
+    </section>
+
+    <section class="Visibility">
+      <h3>Visibility (visible, hidden, collapse)</h3>
+      <div id="visibility-visible">Elemento visible</div>
+      <h3>Elemento Oculto</h3>
+      <div id="visibility-hidden">Elemento oculto (visibility: hidden)</div>
+      <h3>Collapse</h3>
+      <table id="tablaVisibility">
+        <tr >
+            <th>Columna 1</th>
+            <th>Columna 2</th>
+            <th>Columna 3</th>
+        </tr>
+        <tr>
+            <td>Fila 1, Col 1</td>
+            <td>Fila 1, Col 2</td>
+            <td id="collapse">Fila 1, Col 3 (colapsada)</td>
+        </tr>
+        <tr>
+            <td>Fila 2, Col 1</td>
+            <td>Fila 2, Col 2</td>
+            <td>Fila 2, Col 3</td>
+        </tr>
+    </table>
+  </section>
+
+
+  <section>
+    <h2>Z-Index</h2>
+    <div class="zindex z1">Elemento con z-index 1</div>
+    <div class="zindex z2">Elemento con z-index 2</div>
+  </section>
+
+
+
+  <section class="flexbox-section">
+    <h2>Ejemplo de Flexbox</h2>
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item grow">Item 2 (crece más)</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+</section>
+
+</body>
+</html>
